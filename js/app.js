@@ -12,4 +12,16 @@ function createList(event) {
 
 function begin() {
   addList.addEventListener('click', createList)
+  button.addEventListener('click',function() {
+      event.preventDefault();
+      var valueText = nameList.value;
+      if (valueText) {
+          var newcontenido = document.createElement('div');
+          form.classList.toggle('display-none');
+          var text = document.createElement('a')
+          text.href ='#'; 
+          newcontenido.appendChild(text);
+      }
+  })
+
 }
